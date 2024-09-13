@@ -1,0 +1,355 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+.{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+:root{
+    --primary-text-color:rgb(14, 14, 45);
+    --secondary-text-color:#587794;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+
+body{
+    font-family:'Popins',sans-serif;
+    color:var(--primary-text-color);
+
+}
+h1{
+    font-size:3rem;
+}
+h2{
+    font-size:2rem;
+}
+h2{
+    font-size:1.5rem;
+
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color:var(--primary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display:inline-block;
+}
+
+ul{
+    list-style: none;
+}
+
+/* utility classes */
+.small-bold-text{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.container{
+    
+    max-width:1180px;
+    margin-inline:auto;
+    padding-inline:var(--padding-inline-section);
+    height: 30px;
+}
+
+.flex{
+    display:flex;
+    align-items: center;
+}
+
+.hover-link{
+    color:var(--primary-text-color);
+    transition: 0.2s ease-out;
+
+}
+.hover-link:hover{
+    color:var(--accent-color);
+}
+
+.primary-button{
+    background-color: var(--accent-color);
+    border-radius: 6px;
+    font-weight:700;
+    color:white !important;
+    padding:12px 24px;
+    box-shadow:0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+
+.secondary-button{
+border:0.5px solid var(--secondary-text-color);
+border-radius:6px;
+font-weight:700;
+color:var(--primary-text-color);
+padding:12px 24px;
+transition:0.2s ease-out;
+
+}
+
+.secondary-button:hover{
+    border-color: var(--accent-color);
+    color:var(--accent-color) !important;
+}
+/* top-banner */
+.top-banner{
+    
+    background-image:url('https://as1.ftcdn.net/v2/jpg/08/37/18/54/1000_F_837185450_4AZvNFKQNtziSBNgCaZVUVhVQtZrlXDt.jpg') ;
+    background-color: #4fb3d4;
+    background-size: 400px;
+}
+
+.banner-text{
+    color:ivory;
+    padding:15px,30px;
+    text-align: center;
+
+}
+
+.main-nav{
+    margin-top: 20px;
+    justify-content: space-between;
+    
+}
+
+.company-logo img{
+    width:200px;
+    
+}
+.nav-links{
+    flex-basis: 730px;
+}
+
+.nav-links ul{
+    justify-content: end;
+    gap:30px;
+}
+
+/* Header section */
+
+header{
+    padding-top: 250px;
+}
+
+.header-section{
+    justify-content:center;
+    gap:50px;
+
+}
+
+.header-left{
+    max-width:40vw;
+}
+
+.header-left h1{
+    margin-top:20px;
+    margin-bottom: 5px;
+}
+
+.header-right img{
+    width:600px;
+}
+
+.get-started-button{
+    margin-top:20px;
+}
+
+/* Companies section */
+.companies-section{
+    padding-top:220px;
+}
+
+.companies-header{
+    text-align:center;
+    margin-block: 30px;
+    color:var(--primary-text-color);
+}
+
+.logos{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    height:40px;
+}
+
+/* Features section */
+
+.features-section{
+    padding:100px var(--padding-inline-section);
+    
+    
+}
+
+.features-header{
+    text-align: center;
+}
+
+.features-heading-text{
+    margin-bottom:20px;
+}
+
+.features-area{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:40px;
+    margin-top: 20px;
+    background-image: url(./assets/asset\ 32.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-card{
+    flex-direction:column;
+    gap:20px;
+    max-width: 30%;
+    text-align: center;
+}
+
+
+git init/*  Big Feature Section*/
+
+.big-feature-section{
+    
+    padding:1050px var(--padding-inline-section) 0;
+}
+
+.big-feature-container{
+    gap:30px;
+}
+
+.feature-img img{
+    width:100%;
+}
+
+.feature-desc{
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 0px;
+    
+}
+
+.big-feature-section2{
+    padding-top:520px;
+}
+
+.big-feature-section3{
+    padding-top:550px;
+}
+
+/* Examples section */
+.example-section{
+    padding:300px var(--padding-inline-section);
+    
+}
+.examples-header{
+    text-align: center;
+    flex-direction: column;
+
+}
+.examples-heading-text{
+    margin-bottom: 20px;
+}
+
+.examples-card{
+    width:20%;
+    align-items: center;
+    position:relative;
+    min-height:300px;
+    background:black;
+    margin-top: 60px;
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(https://pivotlog.net/wp-content/uploads/2016/10/user-interface-768x432.png);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    transition: 0.2s ease-out;
+
+}
+
+.examples-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+
+.examples-card:nth-child(3){
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(https://images.smiletemplates.com/uploads/screenshots/585/0000585614/powerpoint-template-450w.jpg);
+
+}
+
+.examples-card:nth-child(4){
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url(https://www.usnews.com/dims4/USNEWS/af66e3c/2147483647/crop/2000x1313+0+0/resize/640x420/quality/85/?url=https%3A%2F%2Fwww.usnews.com%2Fcmsmedia%2Ff9%2Ff1%2Fa6174c87479b8222c09903d7651c%2F190219-softwaredevelopers-stock.jpg);
+    background-size: cover;
+}
+
+.card-text{
+    position:absolute;
+    bottom: 20px;
+    left:20px;
+    right:20px;
+    color:white;
+    
+}
+
+.examples-area{
+    
+    margin-block:10px;
+    
+    justify-content: space-between;
+}
+
+
+.cta-section-container{
+    flex-direction:column;
+    gap:10px;
+    color:white;
+    
+}
+
+.cta-section-container p{
+    color:white;
+    margin-top: 20px;
+}
+
+.cta-section{
+    background-color: #183b54;
+    padding: var(--padding-inline-section);
+    margin-top:230px;
+    padding-bottom: 200px;
+}
+
+/* footer */
+footer{
+    padding-top: 40px;
+    padding-bottom:320px;
+    background-color: #ebf2fa;
+}
+
+.link-column{
+    flex-direction:column;
+    align-items: flex-start;
+    gap:20px;
+    line-height:40px ;
+}
+
+.footer-container{
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+/* sub footer */
+.sub-footer{
+    background-color: #b9cde4;
+    padding:var(--padding-inline-section) ;
+    
+}
+
+.subfooter-container{
+    justify-content: center;
+    gap:30px;
+}
